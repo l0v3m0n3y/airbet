@@ -32,7 +32,7 @@ class airbet{
     async trending_game(){
         return(await this.req(`${this.api}/game/trending`))
     }
-    async search_game(category,sort,page,name){
+    async countries()){
         return(await this.req(`${this.api}/countries`))
     }
 }
