@@ -17,7 +17,7 @@ class airbet{
             }).catch(err => reject(err));
         });
     }
-    async register(email,password,nickname){
+    async register(email,password,username){
         return (await this.req(`${this.api}/register`,{"username":username,"email":email,"password":password}));
     }
     async game_list(category,sort,page){
